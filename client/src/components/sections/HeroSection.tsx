@@ -1,7 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from '@/hooks/use-translation';
 import { HeroSlide } from '@/types';
 import ParticlesBackground from '../ui/particles-background';
+import ParallaxContainer from '../ui/parallax-container';
+import FloatingTile from '../ui/floating-tile';
 
 const heroSlides: HeroSlide[] = [
   {
@@ -24,6 +26,8 @@ const heroSlides: HeroSlide[] = [
 const HeroSection = () => {
   const { t } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
+  const sectionRef = useRef<HTMLElement>(null);
+  const [scrollY, setScrollY] = useState(0);
   
   // Auto-advance slides
   useEffect(() => {
@@ -34,9 +38,38 @@ const HeroSection = () => {
     return () => clearInterval(interval);
   }, []);
   
+  // Handle parallax scrolling effect
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
   return (
-    <section id="home" className="relative min-h-screen pt-20 flex items-center overflow-hidden">
+    <section 
+      id="home" 
+      ref={sectionRef}
+      className="relative min-h-screen pt-20 flex items-center overflow-hidden parallax-section"
+    >
       <ParticlesBackground />
+      
+      {/* Floating 3D Ceramic Tiles */}
+      <div className="absolute top-1/3 left-20 z-10 hidden md:block">
+        <FloatingTile size={80} color="#2A4B8D" />
+      </div>
+      
+      <div className="absolute bottom-1/4 right-32 z-10 hidden md:block">
+        <FloatingTile size={60} />
+      </div>
+      
+      <div className="absolute top-1/4 right-48 z-10 hidden lg:block">
+        <FloatingTile size={50} color="#D3D3D3" />
+      </div>
       
       {/* Hero Carousel */}
       <div className="w-full h-full absolute top-0 left-0">
@@ -48,27 +81,36 @@ const HeroSection = () => {
             }`}
           >
             <div
-              className="w-full h-full bg-cover bg-center"
+              className="w-full h-full bg-cover bg-center parallax-background"
               style={{
                 backgroundImage: `url('${slide.imageUrl}')`,
-                backgroundAttachment: 'fixed'
+                backgroundAttachment: 'fixed',
+                transform: `translateY(${scrollY * 0.4}px)` // Parallax effect
               }}
             >
               <div className="w-full h-full bg-black/40 flex items-center">
                 <div className="container mx-auto px-4">
                   <div className="max-w-3xl mx-auto text-center text-white">
-                    <h1 className="font-montserrat font-bold text-4xl md:text-5xl lg:text-6xl mb-4">
-                      {t(slide.titleKey)}
-                    </h1>
-                    <p className="font-opensans text-xl md:text-2xl mb-8">
-                      {t(slide.subtitleKey)}
-                    </p>
-                    <a
-                      href="#contact"
-                      className="inline-block px-8 py-4 bg-[#1A2B6D] hover:bg-[#1A2B6D]/90 text-white font-montserrat font-medium rounded-md transition-all transform hover:scale-105"
-                    >
-                      {t('hero.cta')}
-                    </a>
+                    <ParallaxContainer speed={0.3} direction="up">
+                      <h1 className="font-montserrat font-bold text-4xl md:text-5xl lg:text-6xl mb-4 drop-shadow-lg">
+                        {t(slide.titleKey)}
+                      </h1>
+                    </ParallaxContainer>
+                    
+                    <ParallaxContainer speed={0.5} direction="up">
+                      <p className="font-montserrat text-xl md:text-2xl mb-8 drop-shadow-md">
+                        {t(slide.subtitleKey)}
+                      </p>
+                    </ParallaxContainer>
+                    
+                    <ParallaxContainer speed={0.2} direction="up">
+                      <a
+                        href="#contact"
+                        className="inline-block px-8 py-4 bg-[#1A2B6D] hover:bg-[#1A2B6D]/90 text-white font-montserrat font-medium rounded-md transition-all transform hover:scale-105 shadow-lg"
+                      >
+                        {t('hero.cta')}
+                      </a>
+                    </ParallaxContainer>
                   </div>
                 </div>
               </div>
