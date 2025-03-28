@@ -1,0 +1,51 @@
+Prompt for Replit:
+
+"I need you to create a unique, elegant, beautiful, and fully responsive website for a construction/renovation company specializing in ceramic tiling and similar services (like the company on https://mojkeramicar.co.rs/cenovnik-keramicarske-usluge, but with a distinct identity). This company is a second-generation family business with decades of experience, known for being clean, fast, perfect, and highly skilled. They have two dedicated teams, are available immediately, and provide an exceptional customer experience, making them the best construction workers in their field.
+
+Here are the detailed requirements for the website:
+
+Design and Themes:
+Light Theme: Use a clean, modern color palette of white (#FFFFFF), gray (#D3D3D3 and #808080), and navy blue (#1A2B6D) as the primary accent color. The design should feel airy, professional, and timeless.
+Dark Theme: Invert the light theme with a dark background (#1C2526), white text (#FFFFFF), shades of gray (#A9A9A9 and #696969), and a subtle touch of navy blue (#1A2B6D) for accents. Include a toggle button (e.g., a sun/moon icon) in the navbar to switch between themes seamlessly.
+Typography: Use elegant, readable fonts like 'Montserrat' for headings and 'Open Sans' for body text, with smooth transitions and hover effects.
+Languages:
+Support two languages: English and Serbian, with a language toggle button in the navbar (e.g., 'EN' / 'SRB'). Store translations in a JSON file or similar structure and dynamically switch content based on user selection. Example content for translation:
+English: "Welcome to [Company Name] - Crafting Perfection for Generations"
+Serbian: "Dobrodošli u [Company Name] - Savršenstvo kroz generacije"
+Pages and Sections:
+Hero Section:
+Full-screen carousel with high-quality images of their work (e.g., tiled floors, bathrooms, kitchens). Each slide should have a subtle overlay, a bold headline (e.g., "Perfection in Every Tile"), and a call-to-action button ("Get a Quote").
+Add a parallax scrolling effect as the user moves down the page, with the background image shifting slightly.
+About Us:
+Highlight their legacy: "A second-generation family business with decades of expertise." Include a 3D element, like a rotating family crest or logo, using Three.js or CSS 3D transforms.
+Add an animated timeline of their history (e.g., "1970s: Founded by [Founder Name]" → "Today: Two Expert Teams").
+Gallery:
+A responsive grid of project photos with hover animations (e.g., zoom-in or overlay with project details). Use a lightbox effect for full-screen viewing.
+Include a filter system (e.g., "Bathrooms," "Kitchens," "Outdoor") with smooth transitions.
+Testimonials:
+A carousel of customer quotes with subtle fade-in animations. Example: "They transformed my home in record time! - [Customer Name]."
+Add a 3D card-flip effect when hovering over each testimonial.
+Contact Us:
+A form with fields for name, email, phone, and message, styled with elegant borders and hover effects.
+Embed an interactive Google Map showing their location (use a placeholder address if needed).
+Include contact details (phone, email) and social media icons with subtle animations (e.g., bounce on hover).
+Navigation and Layout:
+Navbar: Fixed at the top, with a hamburger menu for mobile. Include links to Home, About Us, Gallery, Testimonials, Contact Us, plus theme and language toggles. Add a slight shadow and smooth scroll behavior.
+Footer: Include company logo, quick links, contact info, and a small animated "Back to Top" arrow. Add a subtle wave animation at the top of the footer using SVG or CSS.
+Advanced Features:
+3D Elements: Integrate Three.js for at least one interactive 3D object (e.g., a spinning tile or tool in the hero or About Us section).
+Parallax Effects: Apply parallax scrolling to the hero section and background images in other sections for depth.
+Animations: Use CSS animations or GSAP for smooth transitions (e.g., fade-ins, slide-ups) on page load and scroll triggers.
+Responsiveness: Ensure the site looks perfect on all devices (desktop, tablet, mobile) with a mobile-first approach. Use media queries and flexible units (%, vw, rem).
+Unique Touches: Add a subtle particle effect in the background (using particles.js), a sticky "Request a Quote" button that pulses, and micro-interactions (e.g., buttons glowing on hover).
+Technical Requirements:
+Use HTML5, CSS3, and vanilla JavaScript (or a lightweight framework like React if easier for you).
+Optimize for performance: compress images, minify CSS/JS, and lazy-load off-screen content.
+Include comments in the code explaining key sections (e.g., theme switching, 3D elements).
+Host static assets (images, fonts) locally or via a CDN link.
+Example Content:
+Hero Slide 1: "Fast. Clean. Perfect. - Your Dream Space Awaits."
+About Us: "With two expert teams and a legacy spanning generations, we bring unmatched skill to every project."
+Gallery: Use placeholder images of tiled spaces until real ones are provided.
+Contact: "Call us at +381 123 456 789 or email info@[companyname].com."
+Make this website stand out with a luxurious yet approachable feel, blending modern web design trends with the company’s proud heritage. Add any extra creative elements you think would enhance uniqueness (e.g., a custom cursor, animated section dividers). Start by generating the HTML structure, then style with CSS, and finally add JavaScript for interactivity. Show me the code step-by-step as you build it!"
