@@ -164,7 +164,7 @@ export const translations = {
       newsletter: 'Newsletter',
       newsletterDesc: 'Subscribe to receive updates on our latest projects and special offers.',
       emailPlaceholder: 'Your email',
-      copyright: '© 2023 TileMasters. All rights reserved.'
+      copyright: '© 2023 Kucharik-Keramika. All rights reserved.'
     }
   },
   sr: {
@@ -269,7 +269,7 @@ export const translations = {
       newsletter: 'Novosti',
       newsletterDesc: 'Pretplatite se da dobijate informacije o našim najnovijim projektima i specijalnim ponudama.',
       emailPlaceholder: 'Vaš email',
-      copyright: '© 2023 TileMasters. Sva prava zadržana.'
+      copyright: '© 2023 Kucharik-Keramika - Sva prava zadržana.'
     }
   }
 };

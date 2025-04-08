@@ -12,42 +12,42 @@ export const galleryItems: GalleryItem[] = [
   {
     id: 1,
     category: 'bathrooms',
-    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
+    image: 'https://cdn.shopify.com/s/files/1/0518/0601/1582/files/Tiling_a_floor.jpg?v=1667837188',
     title: 'Modern Bathroom',
     description: 'Complete renovation with marble tiles'
   },
   {
     id: 2,
     category: 'kitchens',
-    image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1768&q=80',
+    image: 'https://img.freepik.com/premium-photo/tile-setter-laying-ceramic-tiles-kitchen-floor_861346-87690.jpg',
     title: 'Luxury Kitchen',
     description: 'Porcelain backsplash and countertops'
   },
   {
     id: 3,
     category: 'outdoor',
-    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
+    image: 'https://dam.thdstatic.com/content/production/5hxs1C0Nvo2JBHN3rC06EQ/IOucM7yAhv4jOpAM_KsRkw/Original%20file/how-to-lay-tile-step-14.jpg',
     title: 'Garden Patio',
     description: 'Frost-resistant outdoor tiles'
   },
   {
     id: 4,
     category: 'bathrooms',
-    image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80',
+    image: 'https://t4.ftcdn.net/jpg/05/16/16/21/360_F_516162156_1O7yHOaU008F7qt5VqfVtsQX4FQqc08C.jpg',
     title: 'Spa-Like Bathroom',
     description: 'Natural stone with heated floors'
   },
   {
     id: 5,
     category: 'kitchens',
-    image: 'https://images.unsplash.com/photo-1604709177225-055f99402ea3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80',
+    image: 'https://5.imimg.com/data5/SELLER/Default/2025/2/486892772/EZ/FD/GQ/25400228/interior-tile-flooring-services.jpg',
     title: 'Contemporary Kitchen',
     description: 'Geometric pattern floor tiles'
   },
   {
     id: 6,
     category: 'outdoor',
-    image: 'https://images.unsplash.com/photo-1543157145-f78c636d023d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80',
+    image: 'https://serapool.com/storage/media/4571/conversions/havuz-fayansi-nasil-dosenir-crop.jpg',
     title: 'Pool Deck',
     description: 'Anti-slip ceramic outdoor flooring'
   }

@@ -157,7 +157,7 @@ const ContactSection = () => {
           >
             <div className="mb-8 bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow-md">
               <h3 className="font-montserrat font-semibold text-xl text-gray-900 dark:text-white mb-6">
-                Get In Touch
+                Ostvarimo Kontakt
               </h3>
               
               <div className="space-y-4">
@@ -184,7 +184,7 @@ const ContactSection = () => {
                       {t('contact.info.email')}
                     </p>
                     <p className="text-gray-800 dark:text-white">
-                      info@tilemasters.com
+                      info@kuharik-keramika.com
                     </p>
                   </div>
                 </div>
@@ -198,7 +198,7 @@ const ContactSection = () => {
                       {t('contact.info.address')}
                     </p>
                     <p className="text-gray-800 dark:text-white">
-                      123 Tile Street, Belgrade, Serbia
+                      123 Novi Beograd, Serbia
                     </p>
                   </div>
                 </div>

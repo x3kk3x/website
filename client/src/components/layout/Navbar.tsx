@@ -36,7 +36,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <span className="text-[#1A2B6D] dark:text-white text-2xl font-montserrat font-bold">
-            Tile<span className="text-[#808080]">Masters</span>
+            Kucharik<span className="text-[#808080]">Keramika</span>
           </span>
         </Link>
         
